@@ -1,5 +1,6 @@
 import type {Metadata} from 'next'
-
+import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 
 
 export const metadata: Metadata = {
@@ -16,8 +17,10 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-            <body>{children}</body>
-        </html>
+        <div className="flex flex-col h-screen">
+            <Header/>
+            <main className="flex-1">{children}</main>
+            <Footer/>
+        </div>
     )
 }
