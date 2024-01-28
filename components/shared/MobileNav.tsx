@@ -26,7 +26,7 @@ const MobileNav = () => {
                     />
                     <Separator className="border border-gray-50"/>
                     <NavItems/>
-                </SheetContent>
+                </SheetContent> 
             </Sheet>
         </nav>
     )
