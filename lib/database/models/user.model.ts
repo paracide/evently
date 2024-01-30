@@ -1,15 +1,5 @@
 import {model, models, Schema} from "mongoose";
 
-export type UserDto = Document& {
-    _id: string,
-    clerkId: string;
-    email: string;
-    username: string;
-    firstName: string;
-    lastName: string;
-    photo: string;
-};
-
 const UserSchema = new Schema({
     clerkId: {type: String, required: true, unique: true},
     email: {type: String, required: true, unique: true},

@@ -3,7 +3,7 @@ import NavItems from "@/components/shared/NavItems";
 
 const DesktopNav = () => {
     return (
-        <div >
+        <div>
             <NavItems/>
         </div>
     );
